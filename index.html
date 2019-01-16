@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<link rel="manifest" href="/manifest.json" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 		<script>
 		  var OneSignal = window.OneSignal || [];
@@ -12,6 +15,242 @@
 		</script>
 	</head>
 	<body>
-		<p>I am no four-O-four</p>
-	</body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon"
+                           for="fixed-header-drawer-exp">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample"
+                               id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-color--Blue-Grey-500">
+            <header class="karlo-drawer-header">
+                <img id="identityimg" src="images/ic_launcher.png" class="avatar mdl-color--black">	  
+            </header>
+            <nav class="mdl-navigation">
+                <a class="mdl-layout-title typo-styles__demo mdl-navigation__link mdl-typography--title mdl-color-text--white" href="http://yekarlo.hol.es"><img src="http://yekarlo.hol.es/icon.png" width="30" height="30" border="0"><span style="padding-left:20px;">Ye Karlo</span></a> 
+                <a class="mdl-layout-title typo-styles__demo mdl-navigation__link mdl-typography--title mdl-color-text--white" href="http://yekarlo.hol.es/xamarin"><img src="http://yekarlo.hol.es/xamarin.png" width="25" height="25" border="0"><span style="padding-left:20px;">Xamarin</span></a>
+                <a class="mdl-layout-title typo-styles__demo mdl-navigation__link mdl-typography--title mdl-color-text--white" href="http://yekarlo.hol.es/js"><img src="http://yekarlo.hol.es/javascript.png" width="25" height="25" border="0"><span style="padding-left:20px;">Javascript</span></a>
+                <a class="mdl-layout-title typo-styles__demo mdl-navigation__link mdl-typography--title mdl-color-text--white" href="http://yekarlo.hol.es/InTheKnow"><i class="material-icons mdl-color-text--black" width="25" height="25" border="0">book</i><span style="padding-left:20px;">In the know</span></a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-typography--display-4 mdl-color-text--grey-200 mdl-color--grey-800" style="padding:20px;">
+                    <h1>Welcome to YeKarlo</h1>
+                    <p>You can View my full profile and suggest me something that I've not implemented or ask questions. I am happy to help</p>
+                    <p><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://plus.google.com/+akshaykulkarniak47akshaykulkarni/about" role="button">Connect With Me</a>
+                    </p>  
+       
+                </div>
+                <!-- Your content goes here -->
+                <div class="mdl-grid">
+                    
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--8-col" style="background-color: #14fdff;">
+        <div id="myCard" class="mdl-card">
+            <div class="demo-card-wide   mdl-card--expand mdl-shadow--2dp">
+                <div class="mdl-card__menu">
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Android</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Forms</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.iOS</span>
+                        </span>
+
+                    <button id="0" type="button" class="mdl-chip mdl-chip--contact" style="background-color:#14FDFF;box-shadow: 2px 2px 8px white; cursor:pointer;">
+                        <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">share</i>
+                        <span class="mdl-chip__text" style="vertical-align:top;">Share</span>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="0">
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-800" href="https://www.facebook.com/sharer/sharer.php?u=http://yekarlo.hol.es/xamarin">Facebook</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-200" href="https://twitter.com/home?status=http://yekarlo.hol.es/xamarin">Twitter</a></li>
+                        <li><a target="_blank" disabled class="mdl-menu__item mdl-color-text--green-400"> <!--href="whatsapp://send?text=#"-->Whatsapp</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--red" href="https://plus.google.com/share?url=http://yekarlo.hol.es/xamarin">Google+</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" style="background-image:url(https://blog.xamarin.com/wp-content/uploads/2015/02/Codemonkeys2.jpg); background-size:cover;background-repeat: no-repeat; background-position: center center; padding:0px;">
+                    <h1 class="mdl-card__title-text" style="padding:10px; background-color:#3f51b5;">Xamarin</h1>
+                </div>
+                <div class="mdl-card__supporting-text">Code Samples for Xamarin Forms, Xamarin.Android, Xamarin.iOS, XAML Code Samples Visit my github profile.</div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a id="WebApi" href="http://yekarlo.hol.es/xamarin" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Read More
+                    </a>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                        <img class="mdl-chip__contact" src="https://lh3.googleusercontent.com/-0Olet6FXcxA/AAAAAAAAAAI/AAAAAAAADQw/ZV6VRZ8_yVw/photo.jpg"></img>
+                        <div class="mdl-chip__text" style="margin-right:6px;">Akshay Kulkarni</div>
+                        <a href="https://plus.google.com/+akshaykulkarniak47akshaykulkarni/about" style="border-radius:50%;background-color:#dd4b39;opacity:1;" target="_blank" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                    <span class="mdl-chip__text" style="margin-right:6px;">Wednesday, January 16, 2019</span>
+                    <a href="#" style="border-radius:50%;background-color:#dd4b39;opacity:1;" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--8-col" style="background-color: #14fdff;">
+        <div id="myCard" class="mdl-card">
+            <div class="demo-card-wide   mdl-card--expand mdl-shadow--2dp">
+                <div class="mdl-card__menu">
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Android</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Forms</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.iOS</span>
+                        </span>
+
+                    <button id="1" type="button" class="mdl-chip mdl-chip--contact" style="background-color:#14FDFF;box-shadow: 2px 2px 8px white; cursor:pointer;">
+                        <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">share</i>
+                        <span class="mdl-chip__text" style="vertical-align:top;">Share</span>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="1">
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-800" href="https://www.facebook.com/sharer/sharer.php?u=http://yekarlo.hol.es/xamarin">Facebook</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-200" href="https://twitter.com/home?status=http://yekarlo.hol.es/xamarin">Twitter</a></li>
+                        <li><a target="_blank" disabled class="mdl-menu__item mdl-color-text--green-400"> <!--href="whatsapp://send?text=#"-->Whatsapp</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--red" href="https://plus.google.com/share?url=http://yekarlo.hol.es/xamarin">Google+</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" style="background-image:url(https://blog.xamarin.com/wp-content/uploads/2015/02/Codemonkeys2.jpg); background-size:cover;background-repeat: no-repeat; background-position: center center; padding:0px;">
+                    <h1 class="mdl-card__title-text" style="padding:10px; background-color:#3f51b5;">Web API</h1>
+                </div>
+                <div class="mdl-card__supporting-text">Code Samples for Xamarin Forms, Xamarin.Android, Xamarin.iOS, XAML Code Samples Visit my github profile.</div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a id="WebApi" href="http://yekarlo.hol.es/xamarin" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Read More
+                    </a>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                        <img class="mdl-chip__contact" src="https://lh3.googleusercontent.com/-0Olet6FXcxA/AAAAAAAAAAI/AAAAAAAADQw/ZV6VRZ8_yVw/photo.jpg"></img>
+                        <div class="mdl-chip__text" style="margin-right:6px;">Akshay Kulkarni</div>
+                        <a href="https://plus.google.com/+akshaykulkarniak47akshaykulkarni/about" style="border-radius:50%;background-color:#dd4b39;opacity:1;" target="_blank" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                    <span class="mdl-chip__text" style="margin-right:6px;">Wednesday, January 16, 2019</span>
+                    <a href="#" style="border-radius:50%;background-color:#dd4b39;opacity:1;" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--8-col" style="background-color: #14fdff;">
+        <div id="myCard" class="mdl-card">
+            <div class="demo-card-wide   mdl-card--expand mdl-shadow--2dp">
+                <div class="mdl-card__menu">
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Android</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.Forms</span>
+                        </span>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">turned_in</i>
+                            <span class="mdl-chip__text" style="vertical-align:top;">Xamarin.iOS</span>
+                        </span>
+
+                    <button id="2" type="button" class="mdl-chip mdl-chip--contact" style="background-color:#14FDFF;box-shadow: 2px 2px 8px white; cursor:pointer;">
+                        <i class="material-icons mdl-chip__contact" style="background-color:#3f51b5;color:#fff;">share</i>
+                        <span class="mdl-chip__text" style="vertical-align:top;">Share</span>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="2">
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-800" href="https://www.facebook.com/sharer/sharer.php?u=http://yekarlo.hol.es/xamarin">Facebook</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--blue-200" href="https://twitter.com/home?status=http://yekarlo.hol.es/xamarin">Twitter</a></li>
+                        <li><a target="_blank" disabled class="mdl-menu__item mdl-color-text--green-400"> <!--href="whatsapp://send?text=#"-->Whatsapp</a></li>
+                        <li><a target="_blank" class="mdl-menu__item mdl-color-text--red" href="https://plus.google.com/share?url=http://yekarlo.hol.es/xamarin">Google+</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" style="background-image:url(https://blog.xamarin.com/wp-content/uploads/2015/02/Codemonkeys2.jpg); background-size:cover;background-repeat: no-repeat; background-position: center center; padding:0px;">
+                    <h1 class="mdl-card__title-text" style="padding:10px; background-color:#3f51b5;">JavaScript</h1>
+                </div>
+                <div class="mdl-card__supporting-text"> Trying on JavaScript Functions, I am following &lt;a href=&quot;http://www.w3schools.com/js&quot;&gt;W3SCHOOL&lt;/a&gt; for the same and step by step implementation.</div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a id="WebApi" href="http://yekarlo.hol.es/xamarin" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Read More
+                    </a>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                        <img class="mdl-chip__contact" src="https://lh3.googleusercontent.com/-0Olet6FXcxA/AAAAAAAAAAI/AAAAAAAADQw/ZV6VRZ8_yVw/photo.jpg"></img>
+                        <div class="mdl-chip__text" style="margin-right:6px;">Akshay Kulkarni</div>
+                        <a href="https://plus.google.com/+akshaykulkarniak47akshaykulkarni/about" style="border-radius:50%;background-color:#dd4b39;opacity:1;" target="_blank" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="mdl-chip mdl-chip--contact mdl-chip--deletable" style="background-color:#14FDFF;box-shadow: 2px 2px 4px #888888;">
+                    <span class="mdl-chip__text" style="margin-right:6px;">Wednesday, January 16, 2019</span>
+                    <a href="#" style="border-radius:50%;background-color:#dd4b39;opacity:1;" class="mdl-chip__action"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+
+                </div>
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">Ye Karlo </div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="http://stackexchange.com/users/5430055">
+                                <img src="http://stackexchange.com/users/flair/5430055.png?theme=dark" width="208" height="58" alt="profile for Akshay Kulkarni on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Akshay Kulkarni on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+                            </a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022\/lib\/jquery\/dist\/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-K\u002BctZQ\u002BLL8q6tP7I94W\u002BqzQsfRV2a\u002BAfHIi9k8z8l9ggpc8X\u002BYtst4yBo\/hH\u002B8Fk\u0022\u003E\u003C\/script\u003E"));</script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    
+</body>
+
 </html>
